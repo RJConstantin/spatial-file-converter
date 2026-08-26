@@ -24,14 +24,14 @@
   <section class="hero">
     <div class="eyebrow">Spatial Data Utility</div>
     <h1>Shapefile Converter</h1>
-    <p>Convert shapefiles, KML, KMZ, and GPX files between formats. Choose which attribute fields are kept and which field is used for feature names in GPX and KML output.</p>
+    <p>Convert shapefiles, KML, KMZ and GPX files between formats. Choose which attribute fields are kept and which field is used for feature names in GPX and KML output.</p>
     <div class="privacy"><span class="privacy-dot"></span>Files are processed in your browser and are not uploaded to a server.</div>
   </section>
 
   <main class="workspace">
     <section class="card">
       <h2>1. Add a spatial file</h2>
-      <p class="help">For a shapefile, upload a ZIP containing the shapefile components or select the SHP, DBF, SHX, PRJ, and related files together. KML, KMZ, and GPX can be uploaded directly.</p>
+      <p class="help">For a shapefile, upload a ZIP containing the shapefile components or select the SHP, DBF, SHX, PRJ and related files together. KML, KMZ and GPX can be uploaded directly.</p>
       <div class="upload">
         <label class="field">Choose input file
           <input id="file-input" type="file" multiple accept=".zip,.shp,.dbf,.shx,.prj,.cpg,.kml,.kmz,.gpx">
@@ -43,7 +43,7 @@
 
     <section id="fields-card" class="card hidden">
       <h2>2. Choose the fields to keep</h2>
-      <p class="help">All attribute fields are selected by default. Geometry is always retained. Shapefile output uses the DBF 10-character field-name limit.</p>
+      <p class="help">All attribute fields are selected by default. Geometry is always retained. Shapefile output uses the DBF 10 character field name limit.</p>
       <div class="row">
         <button id="select-all" class="ghost" type="button">Select all</button>
         <button id="select-none" class="ghost" type="button">Select none</button>

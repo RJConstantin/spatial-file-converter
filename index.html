@@ -81,6 +81,29 @@
         </div>
       </div>
 
+      <details class="note" style="margin-top:14px">
+        <summary style="cursor:pointer;font-weight:700">Not sure which coordinate system to choose?</summary>
+        <div style="margin-top:12px;padding:14px;border:1px solid var(--line);border-radius:10px;background:#fff">
+          <p style="margin:0 0 12px;font-size:12px"><strong>First, look at the coordinate numbers.</strong></p>
+          <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:10px;margin-bottom:12px">
+            <div style="padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:#f8fbfd">
+              <strong style="display:block;margin-bottom:4px">Looks like: -113.5, 56.7</strong>
+              These are longitude / latitude values. Use <strong>WGS 84 latitude / longitude</strong> or <strong>NAD 1983 latitude / longitude</strong> if that is the system you need to match.
+            </div>
+            <div style="padding:11px 12px;border:1px solid var(--line);border-radius:8px;background:#f8fbfd">
+              <strong style="display:block;margin-bottom:4px">Looks like: 473566, 6362909</strong>
+              These are metre-based coordinates. If you are matching an existing dataset, check whether its source says <strong>UTM</strong>, <strong>10TM</strong> or <strong>3TM</strong>.
+            </div>
+          </div>
+          <p style="margin:0 0 8px"><strong>For a typical Alberta UTM output:</strong></p>
+          <ul style="margin:0 0 10px 20px;padding:0;line-height:1.7">
+            <li><strong>Western Alberta:</strong> Calgary, Slave Lake, Grande Prairie, Hinton and Jasper are generally <strong>NAD 1983 UTM Zone 11N</strong>.</li>
+            <li><strong>Eastern Alberta:</strong> Edmonton, Fort McMurray, Fort McKay and Cold Lake are generally <strong>NAD 1983 UTM Zone 12N</strong>.</li>
+          </ul>
+          <p style="margin:0"><strong>Use the source name when it is provided.</strong> If the required system specifically says <strong>10TM / AEP Forest</strong>, select NAD 1983 10TM AEP Forest. If it says <strong>3TM</strong>, select the matching 3TM option.</p>
+        </div>
+      </details>
+
       <div class="divider"></div>
       <button id="convert-button" type="button">Convert and Download</button>
       <div id="output-status" class="status">Ready to convert.</div>
